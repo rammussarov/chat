@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  rabbit:
+    image: resilva87/docker-rabbitmq-stomp
+    ports:
+      - "15672:15672"
+      - "61613:61613"
+    environment:
+      - RABBITMQ_NODENAME=my-rabbit
+  chatapp:
+    build: .
+    ports:
+      - "9090:9090"
+    depends_on:
+      - rabbit
+    links:
+      - rabbit
