@@ -30,7 +30,7 @@ To start chatting you need to open the following link in two browsers, or open o
 ```
 localhost:9090
 ```
-To stop container and remove container and image run:
+To stop containers, and remove containers and images you can use:
 ```
 docker-compose down
 ```
