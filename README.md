@@ -1,4 +1,5 @@
 # Chat app
+[![CircleCI](https://circleci.com/gh/rammussarov/chat.svg?style=svg)](https://circleci.com/gh/rammussarov/chat)
 Simple chat with Spring Boot, RabbitMQ and WebSockets. 
 
 # Install
